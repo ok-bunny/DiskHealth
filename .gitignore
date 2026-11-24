@@ -1,0 +1,14 @@
+.DS_Store
+._*
+app/build/
+dist/
+*.app/
+*.dSYM/
+*.log
+*.zip
+.env
+.env.*
+/probe/ata_smart_probe
+/probe/sat_probe
+/probe/smart_probe
+/app/Resources/gen_icon
