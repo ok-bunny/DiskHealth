@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101d23">
+  <meta name="description" content="DiskHealth 是 Apple Silicon Mac 的只读菜单栏工具，可查看磁盘 SMART 健康状态、CPU、内存与 Swap。">
+  <title>DiskHealth · Mac 磁盘健康与系统监控</title>
+  <link rel="alternate" hreflang="zh-CN" href="./">
+  <link rel="alternate" hreflang="en" href="./en/">
+  <link rel="stylesheet" href="./site.css">
+</head>
+<body>
+<a class="skip" href="#main">跳至内容</a>
+<header class="top"><div class="navbar wrap">
+  <a class="brand" href="./"><span class="mark" aria-hidden="true"></span>DiskHealth</a>
+  <nav class="navlinks" aria-label="主导航"><a href="#features">监控功能</a><a href="#download">下载</a></nav>
+  <nav class="langs" aria-label="页面语言"><a href="./" lang="zh-CN" hreflang="zh-CN" aria-current="page">中文</a> <a href="./en/" lang="en" hreflang="en">English</a></nav>
+</div></header>
+<main id="main" tabindex="-1">
+  <section class="hero wrap" aria-labelledby="title">
+    <div>
+      <p class="meta">DiskHealth 1.0.6</p>
+      <h1 id="title">磁盘健康，<span>一眼看清。</span></h1>
+      <p class="lede">在 Mac 菜单栏查看每块磁盘的健康状态，或把小组件放在桌面，随时看 CPU、内存和交换空间的用量。</p>
+      <div class="actions"><a class="button" href="https://github.com/silas-yangxu/DiskHealth/releases/download/v1.0.6/DiskHealth-1.0.6-macOS-arm64.zip">下载 Mac 版</a><a class="button secondary" href="https://github.com/silas-yangxu/DiskHealth">查看源码</a></div>
+      <p class="requirement">macOS 14 或更高版本 · Apple Silicon</p>
+    </div>
+    <figure class="preview" aria-label="桌面小组件示意">
+      <figcaption>
+        <span>界面示意 · 合成数据</span>
+        <fieldset><legend class="sr-only">选择小组件示意模式</legend>
+          <label><input type="radio" name="preview" value="compact" checked><span>收拢</span></label>
+          <label><input type="radio" name="preview" value="expanded"><span>展开</span></label>
+        </fieldset>
+      </figcaption>
+      <div class="stage"><div class="mock">
+        <div class="mockhead"><i class="dot" aria-hidden="true"></i>1 块磁盘健康</div>
+        <div class="sampleline"><b>系统资源</b><span>采样 10:24</span></div>
+        <div class="rings"><div><div class="dial" style="--value:18"><b>18%</b></div><strong>CPU</strong></div><div><div class="dial" style="--value:38"><b>38%</b></div><strong>内存</strong><small>6 GB / 16 GB</small></div><div><div class="dial" style="--value:25"><b>25%</b></div><strong>Swap</strong><small>256 MB / 1 GB</small></div></div>
+        <div class="expanded"><div class="bar"><p><span>CPU</span><b>18%</b></p><span aria-hidden="true" class="track" style="--value:18"></span></div><div class="bar"><p><span>内存</span><b>38%</b></p><span aria-hidden="true" class="track" style="--value:38"></span></div><div class="bar"><p><span>Swap</span><b>25%</b></p><span aria-hidden="true" class="track" style="--value:25"></span></div><div class="drive"><span>示例 SSD</span><b>34°C</b></div></div>
+      </div></div>
+    </figure>
+  </section>
+  <section class="info" id="features" aria-labelledby="features-title"><div class="info-grid wrap">
+    <div><h2 id="features-title">磁盘能告诉你什么</h2>
+      <p class="description">DiskHealth 通过 macOS 的只读接口读取 SMART 信息。点开磁盘卡片，即可查看设备支持的详细指标。</p>
+      <dl class="specs"><div><dt>NVMe</dt><dd>温度、可用备件、已用寿命和介质错误等控制器数据。</dd></div><div><dt>ATA / SATA</dt><dd>设备报告的 SMART 结论，以及可读取的重映射和待映射扇区计数。</dd></div><div><dt>未知状态</dt><dd>部分 USB 硬盘盒不传递 SMART 数据。信息不足时，应用会将对应磁盘标为「未知」。</dd></div></dl>
+    </div>
+    <div class="cadence"><h2>两组独立的刷新开关</h2>
+      <article><h3>磁盘与存储卷</h3><p>启动时读取一次。之后可手动刷新，也可选择每 10 秒、30 秒、1 分钟、5 分钟或 1 小时自动刷新。</p></article>
+      <article><h3>CPU、内存与 Swap</h3><p>单独采样整机资源。可手动读取或每 2 秒自动刷新，暂停后保留最近读数及时间。</p></article>
+    </div>
+  </div></section>
+  <section class="get wrap" id="download" aria-labelledby="download-title">
+    <div><h2 id="download-title">获取 DiskHealth 1.0.6</h2><p>下载 ZIP 并解压，即可找到 DiskHealth.app。应用使用本地 ad-hoc 签名，未经 Apple 公证。</p></div>
+    <div class="actions"><a class="button" href="https://github.com/silas-yangxu/DiskHealth/releases/download/v1.0.6/DiskHealth-1.0.6-macOS-arm64.zip">下载 arm64 ZIP</a></div>
+  </section>
+</main>
+<footer><div class="wrap"><span>DiskHealth</span><a href="https://github.com/silas-yangxu/DiskHealth/blob/HEAD/LICENSE">GPL-3.0-only · 许可证</a></div></footer>
+</body>
+</html>
