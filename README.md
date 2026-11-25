@@ -1,12 +1,12 @@
 # DiskHealth
 
-[简体中文](README.zh-CN.md) · [Project website](https://silas-yangxu.github.io/DiskHealth/) · [Releases](https://github.com/silas-yangxu/DiskHealth/releases)
+[简体中文](README.zh-CN.md) · [Project website](https://ok-bunny.github.io/DiskHealth/en/) · [Releases](https://github.com/ok-bunny/DiskHealth/releases)
 
 DiskHealth is a read-only menu bar monitor for **Apple silicon Macs running macOS 14 or later**. Click its drive icon to check the health of an internal SSD or an external drive, inspect CPU, memory and swap usage, or show a compact desktop panel. The app interface is in Simplified Chinese.
 
 ## Install
 
-1. Download [DiskHealth 1.0.6 for macOS arm64](https://github.com/silas-yangxu/DiskHealth/releases/download/v1.0.6/DiskHealth-1.0.6-macOS-arm64.zip).
+1. Download [DiskHealth 1.0.6 for macOS arm64](https://github.com/ok-bunny/DiskHealth/releases/download/v1.0.6/DiskHealth-1.0.6-macOS-arm64.zip).
 2. Unzip the archive, move `DiskHealth.app` to Applications and open it.
 3. Click the drive icon in the menu bar. Enable **桌面小组件** to show the desktop panel.
 
@@ -35,7 +35,7 @@ The panel can sample the brightness of a thumbnail of the local static wallpaper
 Use Apple’s Xcode or Command Line Tools with Swift, Clang and the **macOS 26 SDK or newer**. The SDK must include AppKit's `NSGlassEffectView` declaration. The resulting arm64 app targets macOS 14 or later.
 
 ```sh
-git clone https://github.com/silas-yangxu/DiskHealth.git
+git clone https://github.com/ok-bunny/DiskHealth.git
 cd DiskHealth/app
 ./build.sh
 open build/DiskHealth.app

@@ -1,12 +1,12 @@
 # DiskHealth
 
-[English](README.md) · [项目官网](https://silas-yangxu.github.io/DiskHealth/) · [发行版本](https://github.com/silas-yangxu/DiskHealth/releases)
+[English](README.md) · [项目官网](https://ok-bunny.github.io/DiskHealth/) · [发行版本](https://github.com/ok-bunny/DiskHealth/releases)
 
 DiskHealth 是一款只读的 macOS 菜单栏监控工具，适用于搭载 **Apple 芯片、运行 macOS 14 或更高版本**的 Mac。点按菜单栏的磁盘图标，即可查看内置 SSD 或外接硬盘的健康状态、CPU、内存和交换空间用量，也能打开常驻桌面的小组件。应用界面为简体中文。
 
 ## 下载安装
 
-1. 下载 [DiskHealth 1.0.6 macOS arm64 压缩包](https://github.com/silas-yangxu/DiskHealth/releases/download/v1.0.6/DiskHealth-1.0.6-macOS-arm64.zip)。
+1. 下载 [DiskHealth 1.0.6 macOS arm64 压缩包](https://github.com/ok-bunny/DiskHealth/releases/download/v1.0.6/DiskHealth-1.0.6-macOS-arm64.zip)。
 2. 解压后，将 `DiskHealth.app` 移到「应用程序」文件夹并打开。
 3. 点按菜单栏的磁盘图标。想在桌面查看读数时，打开「桌面小组件」开关。
 
@@ -35,7 +35,7 @@ DiskHealth 是一款只读的 macOS 菜单栏监控工具，适用于搭载 **Ap
 使用带 Swift、Clang 和 **macOS 26 或更新版本 SDK** 的 Xcode 或 Apple Command Line Tools。SDK 需要包含 AppKit 的 `NSGlassEffectView` 声明。生成的 arm64 应用可在 macOS 14 及以上系统运行。
 
 ```sh
-git clone https://github.com/silas-yangxu/DiskHealth.git
+git clone https://github.com/ok-bunny/DiskHealth.git
 cd DiskHealth/app
 ./build.sh
 open build/DiskHealth.app
